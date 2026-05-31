@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HAFA PICTURES - Inscription</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+padding:20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 15px 50px rgba(0,0,0,.25);
+}
+
+.header{
+background:linear-gradient(135deg,#111827,#5b21b6);
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+.logo{
+max-width:220px;
+margin-bottom:15px;
+}
+
+.header h1{
+font-size:45px;
+font-weight:800;
+}
+
+.header p{
+font-size:20px;
+}
+
+.badge{
+display:inline-block;
+padding:10px 18px;
+background:rgba(255,255,255,.15);
+border-radius:50px;
+margin:5px;
+}
+
+.content{
+padding:30px;
+}
+
+.section{
+margin-bottom:30px;
+}
+
+.section h3{
+background:#5b21b6;
+color:white;
+padding:12px 18px;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.row{
+display:flex;
+gap:15px;
+}
+
+.col{
+flex:1;
+}
+
+input,
+textarea,
+select{
+width:100%;
+padding:12px;
+border:1px solid #d1d5db;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+textarea{
+min-height:120px;
+}
+
+label{
+font-weight:600;
+display:block;
+margin-bottom:5px;
+}
+
+.box{
+background:#f8fafc;
+padding:15px;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.payment{
+background:#fff7ed;
+padding:20px;
+border-radius:15px;
+border:2px solid #fb923c;
+}
+
+.contract{
+background:#ecfeff;
+padding:20px;
+border-radius:15px;
+border:2px solid #06b6d4;
+text-align:center;
+}
+
+.contract a{
+display:inline-block;
+padding:12px 20px;
+background:#0891b2;
+color:white;
+text-decoration:none;
+border-radius:10px;
+margin-top:10px;
+}
+
+.notice{
+background:#f5f3ff;
+padding:20px;
+border-radius:15px;
+}
+
+button{
+width:100%;
+padding:18px;
+background:#5b21b6;
+color:white;
+border:none;
+border-radius:12px;
+font-size:20px;
+font-weight:700;
+cursor:pointer;
+}
+
+button:hover{
+background:#4c1d95;
+}
+
+@media(max-width:768px){
+
+.row{
+flex-direction:column;
+}
+
+.header h1{
+font-size:30px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<img src="logo.png" class="logo">
+
+<h1>HAFA PICTURES</h1>
+
+<p>Atelier Productif de Cinéma</p>
+
+<br>
+
+<span class="badge">10 à 35 ans</span>
+<span class="badge">Mini-films</span>
+<span class="badge">Documentaires</span>
+<span class="badge">Reportages</span>
+
+</div>
+
+<div class="content">
+
+<form action="https://formsubmit.co/madagascarteletravail@gmail.com"
+method="POST"
+enctype="multipart/form-data">
+
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="merci.html">
+<input type="hidden" name="_subject" value="Nouvelle Inscription HAFA Pictures">
+
+<div class="contract">
+
+<h3>Contrat obligatoire</h3>
+
+<p>Veuillez lire le contrat avant de poursuivre.</p>
+
+<a href="contrat.html" target="_blank">
+📄 Télécharger le contrat
+</a>
+
+</div>
+
+<br>
+
+<div class="section">
+
+<h3>Date souhaitée</h3>
+
+<label>Date de début souhaitée</label>
+<input type="date" name="date_souhaitee" required>
+
+</div>
+
+<div class="section">
+
+<h3>Informations personnelles</h3>
+
+<input type="text" name="nom_prenom" placeholder="Nom et prénom" required>
+
+<input type="date" name="date_naissance">
+
+<input type="number" name="age" placeholder="Âge">
+
+<input type="text" name="telephone" placeholder="Téléphone">
+
+<input type="text" name="whatsapp" placeholder="WhatsApp">
+
+<input type="email" name="email" placeholder="Email">
+
+<textarea name="adresse" placeholder="Adresse complète"></textarea>
+
+</div>
+
+<div class="section">
+
+<h3>Détection des talents</h3>
+
+<div class="box"><input type="checkbox" name="talent[]" value="Acteur"> Acteur / Actrice</div>
+<div class="box"><input type="checkbox" name="talent[]" value="Réalisateur"> Réalisateur</div>
+<div class="box"><input type="checkbox" name="talent[]" value="Assistant réalisateur"> Assistant réalisateur</div>
+<div class="box"><input type="checkbox" name="talent[]" value="Scénariste"> Scénariste</div>
+<div class="box"><input type="checkbox" name="talent[]" value="Cadreur"> Cadreur</div>
+<div class="box"><input type="checkbox" name="talent[]" value="Photographe"> Photographe</div>
+<div class="box"><input type="checkbox" name="talent[]" value="Monteur"> Monteur vidéo</div>
+<div class="box"><input type="checkbox" name="talent[]" value="Journaliste"> Journaliste</div>
+<div class="box"><input type="checkbox" name="talent[]" value="Présentateur"> Présentateur</div>
+<div class="box"><input type="checkbox" name="talent[]" value="Maquillage"> Maquillage</div>
+<div class="box"><input type="checkbox" name="talent[]" value="Costume"> Costume</div>
+<div class="box"><input type="checkbox" name="talent[]" value="Décor"> Décoration</div>
+<div class="box"><input type="checkbox" name="talent[]" value="Chant"> Chant</div>
+<div class="box"><input type="checkbox" name="talent[]" value="Danse"> Danse</div>
+<div class="box"><input type="checkbox" name="talent[]" value="Humour"> Humour</div>
+<div class="box"><input type="checkbox" name="talent[]" value="Théâtre"> Théâtre</div>
+
+<textarea name="autres_talents" placeholder="Autres talents"></textarea>
+
+</div>
+
+<div class="section">
+
+<h3>Détection du niveau</h3>
+
+<select name="niveau">
+
+<option>Débutant</option>
+<option>Amateur</option>
+<option>Intermédiaire</option>
+<option>Avancé</option>
+<option>Professionnel</option>
+
+</select>
+
+</div>
+
+<div class="section">
+
+<h3>Motivation</h3>
+
+<textarea name="motivation" placeholder="Pourquoi souhaitez-vous participer ?"></textarea>
+
+<textarea name="objectif" placeholder="Quels sont vos objectifs ?"></textarea>
+
+<textarea name="selection" placeholder="Pourquoi devrions-nous vous sélectionner ?"></textarea>
+
+</div>
+
+<div class="section">
+
+<h3>Ressources matérielles</h3>
+
+<textarea name="smartphone" placeholder="Smartphone (marque et modèle)"></textarea>
+
+<textarea name="camera" placeholder="Caméra"></textarea>
+
+<textarea name="drone" placeholder="Drone"></textarea>
+
+<textarea name="stabilisateur" placeholder="DJI Osmo Pocket / Stabilisateur"></textarea>
+
+<textarea name="ordinateur" placeholder="Ordinateur et configuration"></textarea>
+
+<textarea name="logiciels" placeholder="Logiciels de montage"></textarea>
+
+<textarea name="internet" placeholder="Connexion internet"></textarea>
+
+</div>
+
+<div class="section">
+
+<h3>Ressources logistiques</h3>
+
+<textarea name="vehicule" placeholder="Véhicule disponible"></textarea>
+
+<textarea name="decor" placeholder="Lieu de tournage disponible"></textarea>
+
+<textarea name="hebergement" placeholder="Possibilité d'héberger une équipe"></textarea>
+
+<textarea name="autres_ressources" placeholder="Autres ressources utiles"></textarea>
+
+</div>
+
+<div class="section">
+
+<h3>Documents</h3>
+
+<label>Contrat signé</label>
+<input type="file" name="contrat">
+
+<label>Pièce d'identité</label>
+<input type="file" name="identite">
+
+<label>Certificat de résidence</label>
+<input type="file" name="residence">
+
+<label>Photo du candidat</label>
+<input type="file" name="photo">
+
+<label>Mini-film ou réalisation</label>
+<input type="file" name="realisation">
+
+</div>
+
+<div class="section">
+
+<h3>Participants mineurs</h3>
+
+<input type="text" name="pere" placeholder="Nom du père">
+
+<input type="text" name="tel_pere" placeholder="Téléphone du père">
+
+<input type="text" name="mere" placeholder="Nom de la mère">
+
+<input type="text" name="tel_mere" placeholder="Téléphone de la mère">
+
+</div>
+
+<div class="payment">
+
+<h3>Participation financière</h3>
+
+<input type="number" value="20000" readonly>
+
+<input type="number" value="100000" readonly>
+
+<input type="number" id="total" value="120000" readonly>
+
+<input type="number" id="paye" name="montant_paye" placeholder="Montant payé" oninput="calculer()">
+
+<input type="number" id="reste" value="120000" readonly>
+
+<input type="date" name="date_solde">
+
+<input type="text" name="reference" placeholder="Référence paiement">
+
+</div>
+
+<br>
+
+<div class="notice">
+
+<label>
+<input type="checkbox" required>
+J'accepte le contrat de participation.
+</label>
+
+<br><br>
+
+<label>
+<input type="checkbox" required>
+J'autorise l'utilisation de mon image et de ma voix.
+</label>
+
+<br><br>
+
+<input type="text"
+name="signature"
+placeholder="Nom et prénom (signature électronique)"
+required>
+
+</div>
+
+<br>
+
+<button type="submit">
+
+ENVOYER MON INSCRIPTION
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<script>
+
+function calculer(){
+
+let total = 120000;
+
+let paye = parseInt(document.getElementById('paye').value) || 0;
+
+let reste = total - paye;
+
+if(reste < 0){
+reste = 0;
+}
+
+document.getElementById('reste').value = reste;
+
+}
+
+</script>
+
+</body>
+</html>
